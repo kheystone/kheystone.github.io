@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hey-stone Portfolio</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="logo"><a href="index.html">HYESEOK KANG</a></h1>
+        <!-- menu -->
+        <div class="navigation-wrap">
+            <nav>
+                <ul id="nav">
+                    <li class="active"><a href="index.html">INFO</a></li>
+                    <li><a href="contest.html">공모전</a></li>
+                    <li><a href="theater.html">무대 미술</a></li>
+                    <li><a href="artWork.html">작업</a></li>
+                </ul>
+            </nav>
+            <div class="hamBtn" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!-- mobile nav -->
+            <div id="mNav">
+                <ul class="mNav">
+                    <li class="active"><a href="index.html">Info</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+                    <li><a href="theater.html">StageDesign</a></li>
+                    <li><a href="artWork.html">Works</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        <div class="center">
+            <section class="front clearFix">
+                <div class="popout">
+                    <span>강</span>
+                    <span>혜</span>
+                    <span>석</span>
+                    <span>'</span>
+                    <span>s</span><br>
+                    <span>P</span>
+                    <span>o</span>
+                    <span>r</span>
+                    <span>t</span>
+                    <span>f</span>
+                    <span>o</span>
+                    <span>l</span>
+                    <span>i</span>
+                    <span>o</span>
+                </div>
+                <div class="work1"><img src="images/work1.jpeg" alt="painting" /></div>
+            </section>
+            <section class="aboutMe info">
+                <div class="aboutWrap">
+                    <table>
+                        <tr>
+                            <td colspan="2">인하대학교</td>
+                            <td> <strong>조형예술학과 졸업(3.8/4.5학점)</strong><br>2016 .02.29- 2020.02.21</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">경력</td>
+                            <td><strong>인하대 조형예술학과 편집부 (편집부 일원)</strong><br> 2019.06.05 - 2020.04.11<br>
+                                주요업무: 잡지 발간, 프로젝트 진행, 전시 기획<br>
+                                <br>
+                                <strong>미추홀도서관 (무대 디자인 및 연출)</strong><br> 2019.01.14 - 2019.01.18<br>
+                                주요업무: 책 읽는 연극단 무대 디자인 및 연출<br>
+                                <br>
+                                <strong>부평아트센터 (무대 미술 감독)</strong><br>
+                                2019.04.27 - 2019.07.06<br>
+                                주요업무: 어린이 연극학교 무대 디자인 및 연출<br>
+                                <br>
+                                <strong>팔레드 서울 (작품전시)</strong><br>
+                                2019.11.15 - 2019.11.20<br>
+                                주요업무: 인하대학교 조형예술학과 졸업 전시
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">공모전</td>
+                            <td>
+                                <strong>경기도 공공디자인 공모전 (입상 수상)</strong><br>2020.07.21<br>
+                                수상분야: 고령자를 위한 놀이터 디자인<br><br>
+                                <strong>대전 공공디자인 공모전 (특선 수상)</strong><br>2020.07.19<br>
+                                수상분야: 대전 범죄 예방 도시 디자인<br><br>
+                                <strong>충청북도 공공디자인 공모전 (장려상 수상)</strong><br>2020.08.31<br>
+                                수상분야: 청주 오송 전시관 공공시설 디자인<br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">자격증</td>
+                            <td><strong>문화예술교육사 자격증 (문화체육관광부 발행)</strong><br><br>
+                                <strong>오픽 IH (ACTFL 발행)</strong><br>취득일자:2019
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+            <section class="snsWrap">
+                <h6>CONTACT</h6>
+                <div class="sns">
+                    <p><a href="mailto:hey-stone@naver.com"> hey-stone@naver.com</a></p>
+                    <p><a href="#void">INSTAGRAM</a></p>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script>
+        $(".hamBtn").click(function() {
+            $("#mNav").slideToggle("slow");
+        });
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+</body></html>

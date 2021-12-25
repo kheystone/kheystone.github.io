@@ -1,0 +1,280 @@
+/* ========== section 1 ========== */
+.titleBackground {
+    width: 100%;
+    height: 650px;
+}
+.titleBackground {
+    background: linear-gradient(45deg, #e6e2df 80%, #c2c1bd 100%);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.wrapper {
+    width: 100%;
+    font-family: "GT America Extended Regular", -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    margin: 0 auto;
+    height: 100%;
+}
+.wrapper h1 {
+    text-transform: uppercase;
+    transform: translate(-50%, -50%) skew(10deg) rotate(-10deg);
+    font-size: 17vw;
+    top: 60%;
+    left: 50%;
+    margin: 0;
+    position: absolute;
+    text-rendering: optimizeLegibility;
+    font-weight: 900;
+    color: rgba(255, 158, 177, 0.5);
+    text-shadow: 1px 4px 6px #e6e2df, 0 0 0 #66303a, 1px 4px 6px #e6e2df;
+    white-space: nowrap;
+}
+.wrapper h1:before {
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    top: -4.8%;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    color: #fbf7f4;
+    transform: translate(1.6vw, 0) skew(-13deg) scale(1, 1.2);
+    z-index: 2;
+    text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.2);
+}
+.wrapper h1:after {
+    content: attr(data-heading);
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    color: #d3cfcc;
+    transform: translate(0vw, 0) skew(13deg) scale(1, 0.8);
+    clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0% 100%);
+    text-shadow: 2px -1px 6px rgba(0, 0, 0, 0.3);
+}
+/* ========= section2 ========== */
+.contestWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 500px;
+    background: #e6e2df;
+    background: -moz-linear-gradient(top, #e6e2df 0%, #ff9eb1 100%);
+    background: -webkit-linear-gradient(top, #e6e2df 0%, #ff9eb1 100%);
+    background: linear-gradient(to bottom, #e6e2df 0%, #ff9eb1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6e2df', endColorstr='#ff9eb1', GradientType=0);
+}
+.contestWrap .contest {
+    display: flex;
+    align-items: center;
+}
+.contest .img {
+    text-align: center;
+    width: 100%;
+}
+.contest img {
+    width: 40vw;
+    padding: 15vw 1vw;
+}
+.contest .textBox {
+    padding: 0 0 0 30px;
+    position: relative;
+    display: inline;
+    width: 50%;
+}
+.contest .textBox h5 {
+    font-family: "neue regular";
+    font-size: 1.5vw;
+    padding-bottom: 2vw;
+    color: #555;
+}
+.contest .textBox p {
+    font-family: "neue regular";
+    padding: 1vh 0;
+    font-size: 1vw;
+    font-weight: 500;
+}
+.contest .textBox button {
+    margin-top: 4vw;
+}
+.content__item {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    counter-increment: itemcounter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    pointer-events: none;
+}
+.button {
+    pointer-events: auto;
+    cursor: pointer;
+    background: #e7e7e7;
+    border: none;
+    padding: 1.5rem 3rem;
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+}
+.button::before,
+.button::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.button--hati {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid;
+    background: none;
+    font-family: aktiv-grotesk-extended, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+.button--hati:hover {
+    background: none;
+}
+.button--hati::before {
+    animation: rotateIt 10s linear infinite;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAUElEQVQoU3VPSQ4AMQiS/z/aBiMNNDNeXEBQoDL66dkG52/hzlmsSqMKrAVCoOXuxR3TFVSIIJmzsFvGOMlust3iivmQd/6+3/NlN4paIOEADPIUD/MQvy0AAAAASUVORK5CYII=);
+    content: '';
+    width: 300%;
+    height: 300%;
+    top: -100%;
+    left: -100%;
+    z-index: -1;
+    opacity: 0;
+    transform-origin: 50% 50%;
+    transition: opacity 0.3s;
+}
+@keyframes rotateIt {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+.button--hati:hover::before {
+    opacity: 0.7;
+}
+.button--hati span {
+    display: block;
+    position: relative;
+    z-index: 1;
+    color: mediumvioletred;
+    font-size: 15px;
+    text-shadow: 1px 1px 2px black;
+}
+/* ========== button number2 ========== */
+.button--pandora {
+    display: none;
+    background: #000;
+    font-weight: 700;
+    padding: 0;
+    border-radius: 5px;
+}
+.button--pandora span {
+    display: block;
+    font-size: 15px;
+    background: deepSkyblue;
+    text-shadow: 1px 1px 2px white;
+    padding: 1.5rem 2rem;
+    border: 1px solid #000;
+    border-radius: 5px;
+    transform: translate3d(-4px, -4px, 0);
+    transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.button--pandora:hover span {
+    transform: translate3d(-8px, -8px, 0);
+}
+/* ========== 반응형 ========== */
+@media screen and (max-width: 1200px) {
+    .button--pandora {
+        display: none;
+    }
+    body {
+        background-color: aliceblue;
+    }
+    .front {
+        background-color: aliceblue;
+    }
+    .aboutMe {
+        background-color: aliceblue;
+        background-image: none;
+    }
+    .wrapper h1 {
+        top: 50%;
+        font-size: 19vw;
+    }
+    .contestWrap {
+        padding: 60vw 0 7vw 0;
+    }
+    .contest .img {
+        width: 70%;
+    }
+    .contest img {
+        width: 45vw;
+        padding: 16vw 1vw;
+    }
+    .contest .textBox {
+        padding: 0 15px 0 0;
+    }
+    .contest .textBox h5 {
+        font-size: 3vw;
+    }
+    .contest .textBox p {
+        padding: 0.3vh 0;
+        font-size: 2vw;
+    }
+}
+@media screen and (max-width: 414px) {
+    .button--pandora {
+        display: block;
+    }
+    .button--hati {
+        display: none;
+    }
+    .contestWrap .contest {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+    }
+    .contestWrap {
+        padding: 6vw 0 8vw 0;
+    }
+    .contest .img {
+        width: 100%;
+    }
+    .contest img {
+        width: 80vw;
+        padding: 16vw 1vw 6vw 1vw;
+    }
+    .contest .textBox {
+        padding: 0 0 40px 0;
+        width: 80%;
+    }
+    .contest .textBox h5 {
+        font-size: 3.5vw;
+    }
+    .contest .textBox p {
+        padding: 0.3vh 0;
+        font-size: 3vw;
+    }
+    .contest .textBox button {
+        margin-top: 6vw;
+    }
+    .button--pandora span {
+        padding: 1rem 1rem;
+    }
+}

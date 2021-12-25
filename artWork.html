@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Work</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/artWork.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+  <header>
+        <h1 class="logo"><a href="index.html">HYESEOK KANG</a></h1>
+        <!-- menu -->
+        <div class="navigation-wrap">
+            <nav>
+                <ul id="nav">
+                    <li><a href="index.html">INFO</a></li>
+                    <li><a href="contest.html">공모전</a></li>
+                    <li><a href="theater.html">무대 미술</a></li>
+                    <li class="active"><a href="artWork.html">작업</a></li>
+                </ul>
+            </nav>
+            <div class="hamBtn" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <!-- mobile nav -->
+            <div id="mNav">
+                <ul class="mNav">
+                    <li><a href="index.html">Info</a></li>
+                    <li><a href="contest.html">Contest</a></li>
+                    <li><a href="theater.html">StageDesign</a></li>
+                    <li class="active"><a href="artWork.html">Works</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+      <div id="container">
+         <section class="workNav">
+             <main>
+		<nav class="menu">
+			<div class="menu__item">
+				<a class="menu__item-link" href="painting.html">Fine Art</a>
+				<img class="menu__item-img" src="images/work1.jpeg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Fine Art</span>
+						<span>Fine Art</span>
+						<span>Fine Art</span>
+						<span>Fine Art</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link" href="sculpture.html">Sculpture</a>
+				<img class="menu__item-img" src="images/20191001_1%20(52).jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Sculpture</span>
+						<span>Sculpture</span>
+						<span>Sculpture</span>
+						<span>Sculpture</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link" href="3D.html">3D media</a>
+				<img class="menu__item-img" src="images/robot.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>3D media</span>
+						<span>3D media</span>
+						<span>3D media</span>
+						<span>3D media</span>
+					</div>
+				</div>
+			</div>
+<!--
+			<div class="menu__item">
+				<a class="menu__item-link">Our Crew</a>
+				<img class="menu__item-img" src="img/4.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>The Crew</span>
+						<span>The Crew</span>
+						<span>The Crew</span>
+						<span>The Crew</span>
+					</div>
+				</div>
+			</div>
+			<div class="menu__item">
+				<a class="menu__item-link">Contact</a>
+				<img class="menu__item-img" src="img/5.jpg" alt="Some image"/>
+				<div class="marquee">
+					<div class="marquee__inner" aria-hidden="true">
+						<span>Contact</span>
+						<span>Contact</span>
+						<span>Contact</span>
+						<span>Contact</span>
+					</div>
+				</div>
+			</div>
+-->
+		</nav>
+	</main>
+         </section>
+          </div>
+    <script>
+        $(".hamBtn").click(function() {
+            $("#mNav").slideToggle("slow");
+        });
+
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+</body>
+</html>

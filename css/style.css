@@ -1,0 +1,143 @@
+body {
+        background-color: #dbdbdb;
+}
+/*========== section 1 ==========*/
+.front {
+   padding-top: 90px;
+}
+/*========== popout =========*/
+.popout {
+    font-family: "GT America Extended Regular", -apple-system, BlinkMacSystemFont,
+        system-ui, sans-serif;
+    font-weight: 800;
+    font-size: 4vw;
+    padding: 13% 6%;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+@keyframes ani {
+    0% {
+        transform: translate3d(0, 0, 0);
+        text-shadow: 0em 0em 0 lightblue;
+        color: black;
+    }
+    30% {
+        transform: translate3d(0, 0, 0);
+        text-shadow: 0em 0em 0 lightblue;
+        color: black;
+    }
+    70% {
+        transform: translate3d(0.08em, -0.08em, 0);
+        text-shadow: -0.08em 0.08em lightblue;
+        color: black;
+    }
+    100% {
+        transform: translate3d(0.08em, -0.08em, 0);
+        text-shadow: -0.08em 0.08em lightblue;
+        color: black;
+    }
+}
+.popout span {
+    position: relative;
+    display: inline-block;
+    animation: ani 1s infinite alternate cubic-bezier(0.86, 0, 0.07, 1);
+}
+.popout span:nth-last-child(1n) {
+    animation-delay: -0.1666666667s;
+}
+.popout span:nth-last-child(2n) {
+    animation-delay: -0.3333333333s;
+}
+.popout span:nth-last-child(3n) {
+    animation-delay: -0.5s;
+}
+.work1 {
+    float: right;
+    padding: 2vw;
+    width: 45%;
+}
+.work1 > img {
+    width: 100%;
+}
+/*========== section 2 ==========*/
+.aboutMe {
+    background-color: #dbdbdb;
+    background-image: radial-gradient(circle farthest-corner at 48% 57%,
+            rgba(247, 127, 76, 0.72),
+            transparent 28%),
+        radial-gradient(circle farthest-corner at 55% 50%,
+            rgba(255, 126, 33, 0.9),
+            transparent 32%);
+    max-width: 1550px;
+    margin: 0 auto;
+    padding-top: 8vw;
+}
+table {
+    width: 50%;
+    border-top: 0.7px solid black;
+    border-collapse: collapse;
+}
+th,
+td {
+    color: #000;
+    font-family: "GT America Extended Regular", -apple-system, BlinkMacSystemFont,
+        system-ui, sans-serif;
+    font-size: 1vw;
+    line-height: 1.4;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-bottom: 0.7px solid black;
+    padding: 11px 19px 67px;
+}
+.snsWrap {
+    padding: 100px 10px 50px 10px;
+}
+.snsWrap h6 {
+    font-size: 20px;
+    font-family: "neue regular";
+    font-weight: 400;
+    color: #b43c05;
+}
+.sns {
+    padding: 10px 0px;
+    font-size: 6vw;
+    font-weight: 600;
+    font-family: "neue regular";
+    color: black;
+}
+.sns p:last-child {
+    font-size: 2vw;
+    padding-top: 20px;
+    font-weight: 600;
+}
+/* ========= 반응형 ========== */
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: aliceblue;
+    }
+    .front {
+        background-color: aliceblue;
+            background-image: radial-gradient(circle farthest-corner at 48% 57%,
+            rgba(247, 127, 76, 0.9),
+            transparent 50%),
+        radial-gradient(circle farthest-corner at 55% 50%,
+            rgba(255, 126, 33, 0.9),
+            transparent 50%);
+    }
+    .aboutMe {
+        background-color: aliceblue;
+        background-image: none;
+    }
+    .popout {
+        font-size: 7vw;
+        padding: 13% 3%;
+    }
+    table {
+        width: 100%;
+    }
+    th,
+    td {
+        font-size: 3.3vw;
+    }
+}
